@@ -48,7 +48,7 @@ namespace MICore
             string pidPipeName;
             List<string> cmdArgs = new List<string>();
 
-            string windowtitle = FormattableString.Invariant($"cppdbg: {Path.GetFileName(options.ExePath)}");
+            string windowtitle = FormattableString.Invariant($"{options.Name} | cppdbg: {Path.GetFileName(options.ExePath)}");
 
             if (PlatformUtilities.IsWindows())
             {
